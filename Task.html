@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Task.css">
+    <script src="Task.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <div class="container">
+        
+        <div class="leftpanal">
+            <div class="taskbtn"> <button><h2><i class="fa fa-clipboard-list" style="color: #ffffff;"></i>     Task</h2></button></div>
+            <div class="loc"> <button id="location"><h3> <i class="fa fa-map-marker-alt"></i> Location</h3></button></div>
+        </div>
+        
+        <div class="right1">
+            <div class="newtask"><button onclick="addTask()" id="addnewtask"><h3>+ Add new task</h3></button></div>
+           <div class="maincover">
+            <div class="cover"></div>
+            <div class="main" id="main">
+                <div class="txt"><h4>New Task</h4></div>
+                <div class="sum"><input type="text" id="summary" placeholder="Summary" required></div>
+                <div class="des"><textarea name="" id="des" cols="20" rows="5" placeholder="Description "></textarea></div>
+                <div class="tim"><input type="datetime-local" id="datetime" required ></div>
+                <div class="save"><button id="savebtn" onclick="Save()">Save</button></div>
+                <div class="cncl"><button id="cancle" onclick="cancelTask()" ><h5>Cancle</h5></button></div>
+            </div>
+           </div>
+            
+            <div class="txt"><h3>Incomplete</h3></div>
+            <div class="task_list">
+                <ul id="todobox">
+                   
+                </ul>
+            </div>
+            <div class="complete">
+                <h4>Competed Task</h4>
+                <ul id="complete_task">
+                    
+                </ul>
+                <button id="deleteTasksButton" onclick="deleteAllTasks()">Delete All Tasks</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="logout-container">
+        <button id="logout"><i class="fa-solid fa-right-from-bracket"></i>  Log out</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.container{
+   
+    display: flex ;
+    justify-content: space-between
+}
+.leftpanal{
+    display: flex;
+    justify-content: left;
+    width: 18rem;
+    min-height: 40rem;
+    flex-direction: column;
+}
+.taskbtn{
+    width: 6rem;
+    height: 2rem;
+}
+.taskbtn button{
+    user-select: none;
+    background-color: black;
+    color: white;
+    height: 3rem;
+    width: 13rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+}
+.loc{
+   margin-top: 2rem;
+
+}
+.loc button{
+    user-select: none;
+    cursor: pointer;
+     margin: 3rem;
+     height: 2rem;
+     background: none;
+     border: none;
+     width: 6rem;
+     font-weight: bold;
+}
+.logout-container {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.logout-container button {
+    user-select: none;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.right1{
+     padding-top: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 1;
+}
+.newtask button{
+    user-select: none;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    cursor: pointer;
+}
+
+.task_list ul li{
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+input[type="checkbox"].chkbox {
+    
+    width: 15px; /* Adjust as needed */
+    height: 15px; /* Adjust as needed */
+}
+.task_list ul li span{
+    margin: 1rem;
+}
+.complete_task h4{
+    margin: 1rem 0 ;
+}
+.complete_task ul li{
+    list-style: none;
+}
+
+
+/*  addtask +Add task indside */
+.maincover{
+    display: none;
+}
+.cover{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 10;
+}
+.main{
+    text-align: center;
+    gap: 1rem;
+        position: absolute;
+        z-index: 20;
+        padding: 1rem;
+        background-color: whitesmoke;
+        width: 30rem;
+        /* Initially hide the .main div */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        gap: 2rem;
+        border-radius: .5rem;
+        margin: 5rem;
+    }
+    
+.main div{
+    margin-top: 2rem;
+    
+}
+.main input,textarea{
+    border-radius: 1rem;
+    border: none;
+    padding:.5rem
+}
+.sum input{
+    height: 3rem;
+    width: 25rem;
+    border: none;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.des textarea{
+    height: 3rem;
+    width: 25rem;
+    border: none;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.tim input{
+    height: 3rem;
+    width: 25rem;
+    border: none;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.save button{
+    user-select: none;
+    background-color: black;
+    color: white;
+    border: none ;
+    height: 2rem;
+    width: 15rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.cncl button{
+    user-select: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1rem;
+}
+.complete ul li {
+    opacity: .5; font-size: 1.2rem;
+    list-style: none;
+    
+}
